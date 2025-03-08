@@ -1,5 +1,6 @@
 import Login from "./components/Login";
 import Home from "./components/Home";
+
 import Search from "./components/Search"
 import AddUser from "./components/adduser"
 import EditUser from "./components/edituser"
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element ={<Login />}/>
         <Route path="/home" element ={<Home />}/>
+
         <Route path="/search" element ={<Search />}/>
         <Route path="/adduser" element = {<AddUser/>}/>
         <Route path="/edituser" element = {<EditUser/>}/>

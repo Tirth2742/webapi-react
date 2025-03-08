@@ -16,12 +16,17 @@ const Login = () => {
     try {
       const resp = await  axios.get(`https://localhost:7026/api/Admin/${email}/${password}`);
       console.log(resp)
-      if (resp.data) {
+      if (resp.data==1) {
         console.log("Login successful");
+        localStorage.setItem("userRole", "admin");
+        localStorage.setItem("userEmail",email );
+        localStorage.setItem("userName", "admin");
         navigate("/Home"); 
       }
       else{
-        console.log("else")
+        console.log("Login successful");
+        localStorage.setItem("userRole", "user");
+        navigate("/Home");
       }
     } catch (err) {
       console.error(err);
