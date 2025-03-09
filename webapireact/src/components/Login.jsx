@@ -61,7 +61,9 @@ const Login = () => {
           >
             Login
           </button>
+          <a href="/registration" className=""> sign up </a>
         </form>
+        
       </div>
     </div>
   );

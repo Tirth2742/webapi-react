@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Navbar from "./nav";
-import "./adduser.css";
 import axios from "axios";
 const AddUser = () =>{
     const[firstName , setfirstName] = useState("");

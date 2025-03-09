@@ -5,6 +5,7 @@ import Search from "./components/Search"
 import AddUser from "./components/adduser"
 import EditUser from "./components/edituser"
 import DeleteUser from "./components/deleteuser"
+import Registration from "./components/registration"
 import { Routes, Route, BrowserRouter  } from "react-router-dom";
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/adduser" element = {<AddUser/>}/>
         <Route path="/edituser" element = {<EditUser/>}/>
         <Route path="/deleteuser" element = {<DeleteUser/>}/>
+        <Route path="/registration" element = {<Registration/>}/>
       </Routes>
     </BrowserRouter>
   );
