@@ -6,6 +6,7 @@ import AddUser from "./components/adduser"
 import EditUser from "./components/edituser"
 import DeleteUser from "./components/deleteuser"
 import Registration from "./components/registration"
+import Updatepwd from "./components/updatepwd"
 import { Routes, Route, BrowserRouter  } from "react-router-dom";
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/edituser" element = {<EditUser/>}/>
         <Route path="/deleteuser" element = {<DeleteUser/>}/>
         <Route path="/registration" element = {<Registration/>}/>
+        <Route path="/updatepwd" element = {<Updatepwd/>}/>
       </Routes>
     </BrowserRouter>
   );
